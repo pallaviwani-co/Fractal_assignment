@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/file_1.css">
+    <style>
+        table{
+            margin-left: 1vw;
+            border-spacing: 0.5vw;
+            padding: 0vw;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif;">
+    <div class="nav-bar">
+        <img class="nav_logo" src="static/images/nav_logo.svg" title="Flipkart">
+        <select id="category" name="category" class="category" title="Select a category">
+            <option value="" selected>Select an item</option>
+            <option value="mobiles">Mobiles</option>
+            <option value="shoes">Shoes</option>
+            <option value="watches">Watches</option>
+            <option value="grocery">Grocery</option>
+            <option value="appliances">Home Appliances</option>
+            <option value="pharmacy">Pharmacy</option>
+        </select>
+        <input class="search-bar" id="search_text" type="text" placeholder="Search anything here...." title="Search anything" />
+        <img class="search_icon" src="static/images/search_icon.png" onclick="search()" title="Search" />
+        <select id="user_options" name="user_options" class="user_options" title="User options">
+            <option value="login" selected>Login</option>
+            <option value="signup">New Customer?  Sign Up</option>
+            <option value="my_profile">My Profile</option>
+            <option value="plus_zone">Flipkart Plus Zone</option>
+            <option value="orders">Orders</option>
+            <option value="wishlist">Wishlist</option>
+            <option value="rewards">Rewards</option>
+            <option value="gift_cards">Gift Cards</option>
+        </select>
+        <a class="nav_items" style="margin-left: 5%;" href="#home" id="home" title="Home">Home</a>
+        <a class="nav_items" href="#about" id="about" title="About us">About us</a>
+        <a class="nav_items" href="#contact" id="contact" title="Contact us">Contact us</a>
+    </div>
+    <hr />
+    <br>
+    <div class="main">
+        <div class="main-images">
+            <img style="width: 98%;" src="static/images/highway_1.jpg" />
+            <img style="width: 98%;" src="static/images/highway_2.jpg" />
+            <img style="width: 98%;" src="static/images/highway_3.jpg" />
+        </div>
+        <div class="main-content">
+            <h2><u>Highways</u></h2>
+            <p>A highway is a major public road designed for high-speed travel between cities and towns, often featuring multiple lanes, limited access points like on-ramps, and a barrier separating traffic going in opposite directions. Highways are essential for efficient transportation, connecting distant areas and allowing for a large volume of traffic to flow quickly and safely.</p>
+            <h3>Key characteristics</h3>
+            <ul>
+                <li>Multiple lanes: Highways typically have several lanes in each direction to accommodate high traffic volume.</li>
+                <li>Limited access: Access to highways is usually restricted to on-ramps and off-ramps, which are designed to allow vehicles to enter and exit without crossing oncoming traffic streams.</li>
+                <li>Divided roadway: Many highways are divided by a physical barrier, such as a median strip, to separate traffic traveling in opposite directions.</li>
+                <li>High-speed design: They are built to allow for high-speed travel, with features like gentle curves and long sight lines to improve safety.</li>
+            </ul>
+            <h3>Types of highways</h3>
+            <ol>
+                <li>Expressways/Freeways: These are a type of highway designed for high-speed traffic with limited access.</li>
+                <li>Interstate Highways: This refers to a specific system of highways in the United States that links major cities across the 48 contiguous states.</li>
+                <li>Ring Roads/Beltways: These highways encircle an urban area, allowing traffic to bypass the city center.</li>
+                <li>Toll Roads/Turnpikes: These are highways where drivers pay a toll to use them.</li>
+            </ol>
+        </div>
+        <div class="main-webform">
+            <h3 style="text-align: center;">Registration form</h3>
+            <table>
+                <colgroup>
+                    <col style="width: 18%;">
+                    <col style="width: 82%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label style="font-size: 1.2vw; font-weight: bold;">Name</label></td>
+                        <td><input type="text" style="width: 64%;" /></td>
+                    </tr>
+                    <tr>
+                        <td><label style="font-size: 1.2vw; font-weight: bold;">Mobile no.</label></td>
+                        <td><input type="number" style="width: 64%;" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value= this.value.slice(0, this.maxLength);" /></td>
+                    </tr>
+                    <tr>
+                        <td><label style="font-size: 1.2vw; font-weight: bold;">Address</label></td>
+                        <td><textarea rows="5" cols="30"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label style="font-size: 1.2vw; font-weight: bold;">Gender</label></td>
+                        <td>
+                            <select>
+                                <option value="">Select a value</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="transgender">Prefer not to say</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label style="font-size: 1.2vw; font-weight: bold;">Nationality</label></td>
+                        <td>
+                            <input type="radio" name="nationality" value="Indian"/>
+                            <label>Indian</label>
+                            <input type="radio" name="nationality" value="USA"/>
+                            <label>USA</label>
+                            <input type="radio" name="nationality" value="UK"/>
+                            <label>UK</label>
+                            <input type="radio" name="nationality" value="Others"/>
+                            <label>Others</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label style="font-size: 1.2vw; font-weight: bold;">Interests</label></td>
+                        <td>
+                            <input type="checkbox" name="interests" value="Education"/>
+                            <label>Education</label>
+                            <input type="checkbox" name="interests" value="Healthcare"/>
+                            <label>Healthcare</label>
+                            <input type="checkbox" name="interests" value="Beauty"/>
+                            <label>Beauty</label>
+                            <input type="checkbox" name="interests" value="Pharmacy"/>
+                            <label>Pharmacy</label>
+                            <input type="checkbox" name="technology" value="Technology"/>
+                            <label>Technology</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <button class="form_submit" title="Submit" onclick="alert('Form is submitted successfully.')">Submit</button>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <a class="footer_items" style="margin-left: 5%;" href="#become_a_seller" id="become_a_seller" title="Become a Seller">Become a Seller</a>
+        <a class="footer_items" href="#advertise" id="advertise" title="Advertise">Advertise</a>
+        <a class="footer_items" href="#gift_cards" id="gift_cards" title="Gift cards">Gift cards</a>
+        <a class="footer_items" href="#help_center" id="help_center" title="Help Center">Help Center</a>
+        <a class="footer_items" href="#our_locations" id="our_locations" title="Our locations">Our locations</a>
+        <a class="footer_items" style="color: black;" href="#disclaimer" id="disclaimer" title="Disclaimer">© All rights reserved</a>
+        <img style="float: right; margin-right: 1%;" src="static/images/payment_icons.svg" title="Payment options" />
+    </footer>
+    <script>
+        function search(){
+            var search_text= document.getElementById("search_text").value;
+            alert(`Search text is : ${search_text}`)
+        }
+    </script>
+</body>
+</html>
