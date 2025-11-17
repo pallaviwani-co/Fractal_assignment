@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/file_2.css">
+</head>
+<body>
+    <h2>Calculator</h2>
+    <label><strong>Number 1</strong></label>
+    <input type="number" id="number_1" />
+    <br><br>
+    <label><strong>Number 2</strong></label>
+    <input type="number" id="number_2" />
+    <br><br>
+    
+    <input type="radio" name="calc" onclick="calculate('add')" />
+    <label style="font-weight: bold;">Add</label>
+    <input type="radio" name="calc" onclick="calculate('subtract')" />
+    <label style="font-weight: bold;">Subtract</label>
+    <input type="radio" name="calc" onclick="calculate('multiply')" />
+    <label style="font-weight: bold;">Multiply</label>
+    <input type="radio" name="calc" onclick="calculate('divide')" />
+    <label style="font-weight: bold;">Divide</label>
+    <input type="radio" name="calc" onclick="calculate('mean')" />
+    <label style="font-weight: bold;">Mean</label>
+    <br><br>
+    <label><strong>Result is</strong></label>
+    <input id="result" />
+
+    <script src="static/js/calculate.js"></script>
+</body>
+</html>
